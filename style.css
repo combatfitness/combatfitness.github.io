@@ -60,6 +60,11 @@ body::before {
 	text-transform: uppercase;
 }
 
+.navbar-title img {
+	width: 200px;
+	padding: 5px 45px 5px 0px;
+}
+
 .showcase {
 	background: rgba(35, 35, 35, 0.3) url(img/combat-fitness-logo-black-lg.png)
 		no-repeat;
@@ -167,6 +172,15 @@ span.army-text {
 }
 
 @media (max-width: 768px) {
+	body::before {
+		height: 75px;
+	}
+
+	.navbar-title img {
+		width: 180px;
+		padding: 6px 45px 6px 0;
+	}
+
 	p.lead {
 		text-align: center;
 		margin: 1em auto;
