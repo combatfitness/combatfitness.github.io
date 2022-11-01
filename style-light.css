@@ -155,10 +155,12 @@ span.army-text {
 
 .box-1,
 .box-3 {
-	background-color: #9e9b77 !important;
+	/* background-color: #9e9b77 !important; */
+	background-color: #9e9b7787 !important;
 }
 .box-2 {
-	background-color: #6c615b !important;
+	/* background-color: #6c615b !important; */
+	background-color: #6c615b87 !important;
 }
 /* .box-3 {
 	background-color: #9e9b77 !important;
