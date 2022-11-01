@@ -66,6 +66,19 @@ body::before {
 	opacity: 0.7;
 }
 
+/* .active {
+	border-bottom: 5px solid #ffc107;
+} */
+.nav-item a:active {
+	border-bottom: 5px solid #414031;
+	margin-bottom: -5px;
+}
+
+.nav-item a:hover {
+	border-bottom: 5px solid #474635;
+	margin-bottom: -5px;
+}
+
 .showcase {
 	/* background: rgba(35, 35, 35, 0.3) url(img/combat-fitness-logo-black-lg.png)
 		no-repeat; */
@@ -83,10 +96,17 @@ body::before {
 .showcase-img {
 	min-width: 300px;
 }
-
+.showcase-content h2 {
+	font-family: "Oswald", sans-serif;
+	letter-spacing: 1px;
+}
 .showcase-content p.lead {
 	color: #6b7b58;
 	max-width: 80%;
+	font-weight: 400;
+}
+.lead {
+	font-weight: 400;
 }
 
 .section-title,
@@ -152,7 +172,10 @@ span.army-text {
 	background-color: #ffc107;
 	color: #2c2829;
 }
-
+.card-text {
+	font-size: 1.1rem;
+	padding: 10px 0;
+}
 .box-1,
 .box-3 {
 	/* background-color: #9e9b77 !important; */
@@ -186,11 +209,34 @@ span.army-text {
 	width: 85%;
 }
 
+section#questions .accordion-button,
+section#questions .accordion-body {
+	font-size: 1.25rem;
+	font-weight: 400;
+}
 .accordion-button:not(.collapsed) {
 	background-color: #9e9b7788;
 	color: #41543d;
 }
 
+#map {
+	width: 100%;
+	height: 100%;
+	min-height: 350px;
+	max-height: 500px;
+	border-radius: 10px;
+}
+
+a i {
+	color: #ffc107;
+}
+footer img {
+	width: 210px;
+	margin-bottom: 1rem;
+}
+footer p {
+	margin: 0;
+}
 /**** Media Queries ****/
 @media (min-width: 768px) {
 	.news-input {
@@ -198,6 +244,14 @@ span.army-text {
 	}
 }
 
+@media (max-width: 576px) {
+	h2.army-text,
+	h2.army-text-inverse,
+	h2.section-title,
+	span.army-text {
+		font-size: 9vw !important;
+	}
+}
 @media (max-width: 768px) {
 	body::before {
 		height: 75px;
@@ -211,6 +265,12 @@ span.army-text {
 	p.lead {
 		text-align: center;
 		margin: 1em auto;
+	}
+	h2.army-text,
+	h2.army-text-inverse,
+	h2.section-title,
+	span.army-text {
+		font-size: 30px;
 	}
 }
 @media (max-width: 991px) {

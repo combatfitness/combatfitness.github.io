@@ -545,7 +545,7 @@
 
 		<!-- START Contact & map -->
 		<section class="py-5 px-3 p-md-5" id="contact">
-			<div class="comtainer">
+			<div class="container">
 				<div class="row g-4">
 					<div class="col-md">
 						<h2 class="text-center mb-4">Contact Info</h2>
@@ -577,7 +577,33 @@
 		</section>
 		<!-- END Contact & map -->
 
+		<!-- START Footer -->
+		<footer class="p-5 bg-dark text-white text-center position-relative">
+			<div class="container">
+				<img src="img/combat-fitness-logo-text-shadow-dark.png" alt="" />
+				<p>Copyright &copy; 2022 Combat Fitness</p>
+				<p>Created by <a href="#">Wayne Hendricks</a></p>
+				<a href="#" class="position-absolute bottom-0 end-0 p-5">
+					<i class="bi bi-arrow-up-circle h1"></i>
+				</a>
+			</div>
+		</footer>
+		<!-- END Footer -->
+
 		<!-- Bootstrap JS -->
 		<script src="bootstrap.bundle.min.js"></script>
+		<script src="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js"></script>
+
+		<!-- Mapbox JS -->
+		<script>
+			mapboxgl.accessToken =
+				"pk.eyJ1Ijoid2FubzgxIiwiYSI6ImNsOXJtZ29wZzBqeDgzdmw3cWpmcXQ4eWYifQ.HcEuwwaS3JwsYScP5mPbWQ";
+			var map = new mapboxgl.Map({
+				container: "map",
+				style: "mapbox://styles/mapbox/streets-v11",
+				center: [18.423311, -33.918861],
+				zoom: 18,
+			});
+		</script>
 	</body>
 </html>
