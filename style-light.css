@@ -63,11 +63,18 @@ body::before {
 .navbar-title img {
 	width: 200px;
 	padding: 5px 45px 5px 0px;
+	opacity: 0.7;
 }
 
 .showcase {
-	background: rgba(35, 35, 35, 0.3) url(img/combat-fitness-logo-black-lg.png)
-		no-repeat;
+	/* background: rgba(35, 35, 35, 0.3) url(img/combat-fitness-logo-black-lg.png)
+		no-repeat; */
+	/* background: rgba(35, 35, 35, 0.3) url(img/combat-fitness-logo-grey-70-lg.png)
+		no-repeat; */
+	background: rgba(35, 35, 35, 0.3)
+		url(img/combat-fitness-logo-grey-light-30-lg2.png) no-repeat;
+	background: rgba(35, 35, 35, 0.3)
+		url(img/combat-fitness-logo-grey-light-20-lg.png) no-repeat;
 	background-size: contain;
 	overflow: hidden;
 	background-position: center;
@@ -120,6 +127,15 @@ span.army-text {
 .bg-lime {
 	background: #9e9b77;
 }
+.bg-lime-grey {
+	background: #9e9b7773;
+}
+.bg-light-border {
+	background-color: #f6f6f6;
+	border-width: 1px 0px 1px 0px;
+	border-color: #e0dede;
+	border-style: solid;
+}
 
 .news-text {
 	text-shadow: 3px 3px 5px black;
@@ -139,10 +155,10 @@ span.army-text {
 
 .box-1,
 .box-3 {
-	background-color: #41543d !important;
+	background-color: #9e9b77 !important;
 }
 .box-2 {
-	background-color: #564840 !important;
+	background-color: #6c615b !important;
 }
 /* .box-3 {
 	background-color: #9e9b77 !important;
