@@ -1,0 +1,366 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&display=swap");
+
+@font-face {
+	font-family: "CallOfOpsDuty";
+	src: url("fonts/CallOfOpsDuty.otf") format("opentype");
+	font-style: normal;
+}
+@font-face {
+	font-family: "Stencil Cargo Army";
+	src: url("fonts/Stencil Cargo Army.ttf") format("truetype");
+	font-style: normal;
+}
+@font-face {
+	font-family: "armalite";
+	src: url("fonts/armalite.ttf") format("truetype");
+	font-style: normal;
+}
+@font-face {
+	font-family: "BlackOpsOne-Regular";
+	src: url("fonts/BlackOpsOne-Regular.ttf") format("truetype");
+	font-style: normal;
+}
+
+/* CSS */
+/* body {
+	font-family: "Oswald", sans-serif;
+	letter-spacing: 0.5px;
+} */
+body::before {
+	display: block;
+	content: "";
+	height: 100px;
+}
+
+.offset::before {
+	height: 60px;
+	/* margin-top: -60px; */
+	content: "";
+	display: block;
+}
+
+.offset::after {
+	height: 60px;
+	margin-top: -20px;
+	content: "";
+	display: block;
+}
+
+.logo-text {
+	line-height: 1em;
+	margin-bottom: 0;
+	transform: perspective(2);
+}
+
+.btn,
+.nav-item {
+	font-family: "Oswald", sans-serif;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+}
+
+.navbar-brand img {
+	transition: 0.2s;
+}
+.navbar-title img {
+	width: 200px;
+	padding: 5px 45px 5px 0px;
+	opacity: 0.7;
+	transition: 0.2s;
+}
+
+/* .active {
+	border-bottom: 5px solid #ffc107;
+} */
+.nav-item a:hover {
+	border-bottom: 5px solid #474635;
+	/* border-bottom: 5px solid #9e9b77; */
+	margin-bottom: -5px;
+}
+.nav-item a:active {
+	border-bottom: 5px solid #414031;
+	/* border-bottom: 5px solid #ffc107; */
+	margin-bottom: -5px;
+}
+
+.box-shadow {
+	box-shadow: 0px 0px 15px #212529;
+}
+
+.showcase {
+	background: rgba(35, 35, 35, 0.3) url(img/combat-fitness-logo-black-lg.png)
+		no-repeat;
+	background-size: contain;
+	overflow: hidden;
+	background-position: center;
+}
+
+.showcase-img {
+	min-width: 300px;
+}
+
+.showcase-content p.lead {
+	color: #6b7b58;
+	max-width: 80%;
+	font-weight: 500;
+}
+.lead {
+	font-weight: 400;
+}
+
+.section-title,
+.army-text {
+	/* font-family: "Oswald", sans-serif; */
+	/* font-family: "CallOfOpsDuty", sans-serif; */
+	/* font-family: "Stencil Cargo Army", sans-serif; */
+	font-family: "armalite", sans-serif;
+	color: #91a96e;
+	text-shadow: 3px 2px 1px #2c2829;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+h2.army-text,
+h2.army-text-inverse,
+h2.section-title,
+span.army-text {
+	font-size: 40px;
+}
+
+.army-text-inverse {
+	font-family: "armalite", sans-serif;
+	color: #2c2829;
+	text-shadow: 3px 2px 1px #41543d;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+.COD-text {
+	font-family: "BlackOpsOne-Regular", serif;
+}
+.bg-yellow {
+	background-color: #ffc107;
+}
+.bg-camo {
+	background: url(img/camo-1.jpeg);
+	opacity: 0.95;
+}
+
+.bg-green {
+	/* background: #41543d; */
+	background: #687344;
+}
+.bg-lime {
+	background: #9e9b77;
+}
+.bg-lime-grey {
+	background: #9e9b7773;
+}
+.bg-light-border {
+	background-color: #f6f6f6;
+	border-width: 1px 0px 1px 0px;
+	border-color: #e0dede;
+	border-style: solid;
+}
+.border-radius {
+	border-radius: 0.375rem;
+	box-shadow: 0px 0px 15px #212529;
+}
+
+/* .news-text {
+	text-shadow: 3px 3px 5px black;
+}
+
+.news-input .form-control:focus {
+	border-color: #ffc107;
+	outline: 0;
+	box-shadow: 0 0 0 0.25rem rgba(255, 193, 7, 0.25);
+} */
+
+.card-title {
+	font-family: "BlackOpsOne-Regular", serif;
+	background-color: #ffc107;
+	color: #2c2829;
+}
+.card-text {
+	font-size: 1.1rem;
+	padding: 10px 0;
+}
+
+.box-1,
+.box-3 {
+	/* background-color: #9e9b77 !important; */
+	background-color: #9e9b7787 !important;
+}
+.box-2 {
+	/* background-color: #6c615b !important; */
+	background-color: #6c615b87 !important;
+}
+/* .box-3 {
+	background-color: #9e9b77 !important;
+} */
+
+.boxes-img {
+	width: 100px;
+	background: #fff;
+	padding: 12px;
+	border-radius: 50%;
+}
+
+/* .img-box-shadow {
+	box-shadow: 0px 0px 30px #999;
+} */
+.img-left {
+	float: left;
+	width: 85%;
+}
+
+.img-right {
+	float: right;
+	width: 85%;
+}
+
+section#questions .accordion-button,
+section#questions .accordion-body {
+	font-size: 1.25rem;
+	font-weight: 400;
+}
+.accordion-button:not(.collapsed) {
+	background-color: #9e9b7788;
+	color: #41543d;
+}
+
+#map {
+	width: 100%;
+	height: 100%;
+	min-height: 350px;
+	max-height: 500px;
+	border-radius: 10px;
+}
+
+/*
+  =====================================
+  CSS for <iframe> embedded Google Map
+  =====================================
+*/
+.map-wrapper {
+	position: relative;
+	/*
+    Do math with the height of your iframe divided by the width, then converted to percent
+    In this example the height is 400 and the width is 600
+    400 / 600 = .66666667
+    which is 66.6666667% */
+
+	/* I'm choosing 79% to match the height to the right div */
+	padding-bottom: 79.4%;
+	height: 0;
+	/*border: 1px solid #800000;*/
+	margin-bottom: 20px;
+}
+.map-wrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url(../img/gmaps-blur.jpg) no-repeat;
+	overflow: hidden;
+	background-size: cover;
+}
+
+/* This sets an overlay element that covers the map and helps prevent people from zooming the map while scrolling. */
+.overlay {
+	background: transparent;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+/*
+  =====================================
+  CSS for <iframe> embedded Google Map
+  =====================================
+*/
+
+.scroll-up {
+	/* color: #ffc107; */
+	color: #212529;
+	transition: 0.3s;
+	opacity: 0;
+	border-radius: 50%;
+	box-shadow: 0px 0px 3px #999;
+}
+.scroll-up i:hover {
+	color: #ffc107;
+}
+
+footer img {
+	width: 210px;
+	margin-bottom: 1rem;
+	/* opacity: 0.7; */
+}
+footer p {
+	margin: 0;
+}
+
+footer a {
+	color: #ffc107;
+}
+footer a:hover {
+	color: #6b7b58;
+}
+
+/**** Media Queries ****/
+@media (min-width: 768px) {
+	/* .news-input {
+		width: 50%;
+	} */
+	.whatsapp-btn {
+		width: 40%;
+		text-align: center;
+	}
+}
+
+@media (max-width: 576px) {
+	h2.army-text,
+	h2.army-text-inverse,
+	h2.section-title,
+	span.army-text {
+		font-size: 9vw !important;
+	}
+}
+@media (max-width: 768px) {
+	body::before {
+		height: 75px;
+	}
+
+	.navbar-title img {
+		width: 180px;
+		padding: 6px 45px 6px 0;
+	}
+
+	p.lead {
+		text-align: center;
+		margin: 1em auto;
+	}
+	h2.army-text,
+	h2.army-text-inverse,
+	h2.section-title,
+	span.army-text {
+		font-size: 30px;
+	}
+}
+@media (max-width: 991px) {
+	p.lead {
+		font-size: 1rem;
+	}
+	.img-left {
+		float: none;
+		width: 100%;
+	}
+	.img-right {
+		float: none;
+		width: 100%;
+	}
+}
