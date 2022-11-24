@@ -15,50 +15,26 @@
 		<!-- Custom CSS -->
 		<link rel="stylesheet" href="style.css" />
 	</head>
-	<body>
+	<body data-bs-spy="scroll" data-bs-target="#navmenu" id="home">
 		<!-- START Navbar -->
-		<nav class="navbar navbar-expand-lg bg-green navbar-dark fixed-top py-0">
+		<nav
+			class="navbar navbar-expand-lg bg-lime navbar-light fixed-top py-0 box-shadow"
+		>
 			<div class="container">
 				<!-- Navbar brand -->
 				<div class="navbar-brand d-none d-sm-block">
-					<!-- <img
+					<img
 						src="img/combat-fitness-logo-sm.png"
 						style="width: 90px"
 						alt="combat-fitness-logo-img"
-					/> -->
-					<img
-						src="img/combat-fitness-logo-outline-8.png"
-						style="width: 90px"
-						alt="combat-fitness-logo-img"
 					/>
-					<!-- <img
-						src="img/combat-fitness-logo-green-shadow.png"
-						style="width: 90px"
-						alt="combat-fitness-logo-img"
-					/>
-					<img
-						src="img/combat-fitness-logo-dark-shadow.png"
-						style="width: 90px"
-						alt="combat-fitness-logo-img"
-					/>
-					<img
-						src="img/combat-fitness-logo-dark-shadow-matching.png"
-						style="width: 90px"
-						alt="combat-fitness-logo-img"
-					/>
-					<img
-						src="img/combat-fitness-logo-NEW-TRY.png"
-						style="width: 90px"
-						alt="combat-fitness-logo-img"
-					/> -->
 				</div>
 
 				<div class="navbar-title">
 					<img
-						src="img/combat-fitness-logo-text-lighter-shadow-dark.png"
+						src="img/combat-fitness-logo-text.png"
 						alt="combat-fitness-logo-text"
 					/>
-					<!-- <h1 class="army-text-inverse logo-text">Combat<br />Fitness</h1> -->
 				</div>
 
 				<!-- Navbar button -->
@@ -75,19 +51,30 @@
 				<div class="collapse navbar-collapse" id="navmenu">
 					<ul class="navbar-nav ms-auto">
 						<li class="nav-item">
-							<a href="#about" class="nav-link">About</a>
+							<a href="#home" class="nav-link">Home</a>
+						</li>
+						<li class="nav-item">
+							<a href="#about" class="nav-link">Who we are</a>
 						</li>
 						<li class="nav-item">
 							<a href="#courses" class="nav-link">Courses</a>
 						</li>
 						<li class="nav-item">
-							<a href="#bookings" class="nav-link">Bookings</a>
-						</li>
-						<li class="nav-item">
 							<a href="#instructors" class="nav-link">Instructors</a>
 						</li>
 						<li class="nav-item">
+							<a href="#bookings" class="nav-link">Bookings</a>
+						</li>
+						<li class="nav-item">
 							<a href="#contact" class="nav-link">Contact</a>
+						</li>
+
+						<li class="nav-item bg-light">
+							<a
+								href="https://combatfitness.github.io/training-methodology.html"
+								class="nav-link"
+								>Training & Methodology</a
+							>
 						</li>
 					</ul>
 				</div>
@@ -98,21 +85,20 @@
 		<!-- START Showcase -->
 		<section class="bg-dark text-light text-center text-md-start pt-5 showcase">
 			<div class="container">
-				<div class="d-md-flex align-items-center justify-content-between">
-					<div class="showcase-content">
-						<h2>
-							Learn <span class="text-warning army-text">Self Defence</span>
+				<div class="d-lg-flex align-items-center justify-content-between">
+					<div class="showcase-content mb-4">
+						<h2 class="army-text">
+							Learn <span class="text-warning">Self Defence</span>
 						</h2>
-						<p class="lead">
-							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo et
-							nihil dignissimos odit! Tenetur adipisci nemo commodi reiciendis
-							optio delectus.
-						</p>
+						<h2 class="Oswald-text pb-4">
+							And Everything You Need To Protect Yourself Or Loved Ones In A
+							Life-Threatening Situation.
+						</h2>
 						<button class="btn btn-warning btn-lg">Start Training Now</button>
 					</div>
 					<img
 						class="img-fluid w-100 pt-5 p-md-0 align-self-end showcase-img"
-						src="img/self-defence2-sm.png"
+						src="img/pro-photo-1-no-bg.png"
 						alt=""
 					/>
 				</div>
@@ -120,183 +106,435 @@
 		</section>
 		<!-- END Showcase -->
 
-		<!-- START Newsletter -->
-		<section class="bg-camo bg-lime text-light py-5 px-3 p-md-5">
+		<!-- START WhatsApp Button -->
+		<section class="bg-light text-dark py-5 px-3 p-md-5">
 			<div class="container">
-				<div class="d-md-flex justify-content-between align-items-center">
-					<h4 class="news-text">Sign up for our Newsletter</h4>
-					<!-- Newsletter Input -->
-					<div class="input-group news-input">
-						<input type="text" class="form-control" placeholder="Enter Email" />
-						<button
-							class="btn btn-dark btn-lg"
-							type="button"
-							id="button-addon2"
+				<div class="bg-camo p-4 border border-radius">
+					<div
+						class="d-md-flex justify-content-between align-items-center bg-lime p-0 border-radius"
+					>
+						<h3
+							class="Oswald-text text-uppercase bg-lime p-2 mb-0 border-radius"
 						>
-							Sign Up!
-						</button>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- END Newsletter -->
-
-		<!-- START Boxes -->
-		<section class="py-5 px-3 p-md-5 offset" id="courses">
-			<div class="container">
-				<h2 class="pb-5 text-center section-title">Our Courses</h2>
-				<div class="row g-5">
-					<div class="col-md">
-						<div class="card bg-dark text-light box-1">
-							<div class="card-body text-center">
-								<div class="h1">
-									<img class="boxes-img" src="img/defence.png" alt="" />
-									<!-- <i class="bi bi-laptop"></i> -->
-								</div>
-								<h3 class="card-title">Self Defence</h3>
-								<p class="card-text">
-									Lorem ipsum dolor sit amet consectetur adipisicing elit.
-									Inventore delectus eius at adipisci sint ea?
-								</p>
-								<a href="#" class="btn btn-secondary">Read More</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-md">
-						<div class="card bg-dark text-light box-2">
-							<div class="card-body text-center">
-								<div class="h1">
-									<img class="boxes-img" src="img/ninja-lineart.png" alt="" />
-									<!-- <i class="bi bi-laptop"></i> -->
-								</div>
-								<h3 class="card-title">Ninjitsu</h3>
-								<p class="card-text">
-									Lorem ipsum dolor sit amet consectetur adipisicing elit.
-									Inventore delectus eius at adipisci sint ea?
-								</p>
-								<a href="#" class="btn btn-secondary">Read More</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-md">
-						<div class="card bg-dark text-light box-3">
-							<div class="card-body text-center">
-								<div class="h1">
-									<img class="boxes-img" src="img/boxer.png" alt="" />
-									<!-- <i class="bi bi-laptop"></i> -->
-								</div>
-								<h3 class="card-title">MMA</h3>
-								<p class="card-text">
-									Lorem ipsum dolor sit amet consectetur adipisicing elit.
-									Inventore delectus eius at adipisci sint ea?
-								</p>
-								<a href="#" class="btn btn-secondary">Read More</a>
-							</div>
+							Want to learn more. Reach out to us on WhatsApp.
+						</h3>
+						<!--  WhatsApp btn-->
+						<div class="whatsapp-btn">
+							<a
+								href="https://api.whatsapp.com/send?phone=27798898390"
+								target="_blank"
+								class="btn btn-success btn-lg"
+							>
+								<i class="bi bi-whatsapp h2 text-light">
+									Chat Now on WhatsApp!</i
+								>
+							</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<!-- END Boxes -->
+		<!-- END WhatsApp Button -->
 
-		<!-- START Course Info-->
-		<section class="py-5 px-3 p-md-5 offset">
+		<!-- Start About -->
+		<section id="about" class="py-5 px-3 p-md-5 offset">
 			<div class="container">
-				<div class="row align-items-center justify-content-center g-4">
-					<div class="col-md text-center text-md-start">
-						<h2 class="army-text">Self Defence</h2>
-						<p class="lead">
-							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi
-							incidunt adipisci alias illo, tempore corrupti rerum quidem
-							repudiandae atque molestias?
+				<h2 class="text-center section-title pb-5">About Combat Fitness</h2>
+
+				<!-- START Blockquote -->
+				<figure class="bg-camo quote text-center p-5 mx-0 mx-md-5">
+					<bi class="bi-quote h2 text-light bg-lime p-2"></bi>
+					<div class="bg-light p-5">
+						<blockquote class="blockquote">
+							<p>
+								"Most people would not be willing to dedicate several years to
+								master kung fu so I had to find a range of simpler techniques
+								that would still be effective."
+							</p>
+						</blockquote>
+						<hr />
+						<figcaption class="blockquote-footer">
+							Sensei Warren Chong
+						</figcaption>
+					</div>
+				</figure>
+				<!-- END Blockquote -->
+
+				<div class="row align-items-top justify-content-between my-5">
+					<div class="col-md about-content text-center text-md-start">
+						<h2 class="Oswald-text mb-4">What is Combat Fitness?</h2>
+						<p class="lead text-dark mb-5">
+							Combat Fitness is an exercise system that combines fundamental
+							self-defence training with fitness workouts, which advances into
+							learning actual combat techniques from various martial arts.
+							<br /><br />
+							These include striking, kicking, grappling, take-downs, throws and
+							weapon work.
 						</p>
-						<ul class="list-group">
-							<li class="list-group-item">An item</li>
-							<li class="list-group-item">A second item</li>
-							<li class="list-group-item">A third item</li>
-							<li class="list-group-item">A fourth item</li>
-							<li class="list-group-item">And a fifth one</li>
-						</ul>
-						<a href="" class="btn btn-secondary mt-4">
-							<i class="bi bi-chevron-right">Read More</i>
-						</a>
 					</div>
 					<div class="col-md">
 						<img
-							src="img/self-defence-4.jpg"
+							class="img-fluid img-right about-img"
+							src="img/about/About2.jpg"
 							alt=""
-							class="img-fluid img-box-shadow img-right"
 						/>
+					</div>
+				</div>
+				<div class="row align-items-top justify-content-between">
+					<div class="col-md about-content text-center text-md-start">
+						<h2 class="Oswald-text mb-4">Who is Combat Fitness For?</h2>
+						<p class="lead text-dark mb-5">
+							Who is Combat Fitness For? Combat Fitness is for all ages; whether
+							you want to learn how to defend yourself, become fit and strong,
+							become more flexible, or learn advanced combat skills, there is
+							something for everyone. <br /><br />
+							The exercises are scalable to allow senior citizens to participate
+							at their own pace and they can remain active. Kids will also
+							benefit from the workouts to increase their physical activity,
+							improve their hand-eye coordination, control their temperament and
+							to manage bullying.
+						</p>
+					</div>
+					<div class="col-md">
+						<img
+							class="img-fluid img-right about-img"
+							src="img/about/About3.jpg"
+							alt=""
+						/>
+					</div>
+				</div>
+
+				<div class="row align-items-top justify-content-between">
+					<div class="col-md order-2 order-md-1">
+						<img
+							class="img-fluid about-img"
+							src="img/about/About1.jpg"
+							alt=""
+						/>
+					</div>
+					<div
+						class="col-md about-content text-center text-md-start order-1 order-md-2"
+					>
+						<h2 class="Oswald-text mb-4">The Origin of Combat Fitness</h2>
+						<p class="lead text-dark mb-5">
+							The idea of Combat Fitness started when my sister was driving home
+							from university while travelling through Braamfontein. In the
+							bumper-to-bumper afternoon traffic, an unassuming pedestrian
+							walked past her car, turned around, and then smashed her window to
+							steal her handbag. She was shaken up, but fortunately she was not
+							assaulted and she only suffered minor glass cuts. This incident
+							got me thinking: with my five plus years of kung fu training, what
+							would I have done differently? Would I have been more alert? Would
+							I have been able to confront the perpetrator? So I began to
+							started to think deeply about the situation and I deduced seven
+							action steps to follow in any event. I began to research the
+							concept of “self-defence” and I realised that most people would
+							not be willing to dedicate several years to master kung fu so I
+							had to find a range of simpler techniques that would still be
+							effective. In my research I came across a concept called O.O.D.A
+							which stands for Observe–Orient–Decide–Act developed by Colonel
+							John Boyd, and it was strikingly similar to what I came up with,
+							but was three steps shorter and more concise.
+							<a href="#home">
+								Read more about our story and the Combat Fitness methodology.
+							</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END About  -->
+
+		<!-- START Course Info -->
+		<section class="pt-5 offset" id="courses">
+			<h2 class="pb-5 text-center section-title">Our Courses</h2>
+
+			<div class="row g-5">
+				<div class="col-md-12">
+					<div class="card bg-camo text-dark border-radius-none py-5">
+						<div class="container">
+							<div
+								class="row pb-5 py-md-1 g-1 justify-content-center align-items-center bg-light"
+							>
+								<div class="col-md img-row">
+									<div class="col-6">
+										<img src="img/Styles/Akisambo-sm-1.jpeg" alt="" />
+									</div>
+									<div class="col-6">
+										<img src="img/Styles/Akisambo2.jpg" alt="" />
+									</div>
+									<div class="col-6">
+										<img src="img/Styles/Akisambo3.jpg" alt="" />
+									</div>
+									<div class="col-6">
+										<img src="img/Styles/Akisambo4.jpeg" alt="" />
+									</div>
+								</div>
+
+								<div class="col-md text-center p-2">
+									<h3 class="card-title mb-3 mb-3">Akisambo</h3>
+									<p class="card-text">
+										Aikisambo is a combination of Japanese Aikido and Russian
+										Sambo, with both arts originally being developed for
+										self-defence purposes, and both containing judo in their
+										histories.
+										<br /><br />
+										It contains throws, take-downs and joint locks as well as a
+										small number of strikes.
+									</p>
+									<a href="#bookings" class="btn btn-secondary">Book Now</a>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="py-5 px-3 p-md-5 bg-lime offset">
-			<div class="container">
-				<div class="row align-items-center justify-content-center g-4">
-					<div class="col-md">
-						<img
-							src="img/ninjitsu-1.jpg"
-							alt=""
-							class="img-fluid img-box-shadow img-left"
-						/>
-					</div>
-					<div class="col-md text-center text-md-end">
-						<h2 class="army-text-inverse">Ninjitsu</h2>
-						<p class="lead">
-							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi
-							incidunt adipisci alias illo, tempore corrupti rerum quidem
-							repudiandae atque molestias?
-						</p>
-						<ul class="list-group bg-lime">
-							<li class="list-group-item bg-lime">An item</li>
-							<li class="list-group-item bg-lime">A second item</li>
-							<li class="list-group-item bg-lime">A third item</li>
-							<li class="list-group-item bg-lime">A fourth item</li>
-							<li class="list-group-item bg-lime">And a fifth one</li>
-						</ul>
-						<a href="" class="btn btn-secondary mt-4">
-							<i class="bi bi-chevron-right">Read More</i>
-						</a>
+		<section>
+			<div class="row g-5">
+				<div class="col-md-12">
+					<div class="card bg-lime text-dark border-radius-none py-5">
+						<div class="container">
+							<div
+								class="row pb-5 pb-md-1 g-1 justify-content-center align-items-center bg-lime"
+							>
+								<div class="col-md text-center p-2 order-2 order-md-1">
+									<h3 class="card-title mb-3">Boxing</h3>
+									<p class="card-text">
+										Boxing (i.e. striking with the fists) is a form of combat
+										that is common in many cultures throughout human history.
+										<br /><br />
+										Modern boxing is fought with rules and gloves and require
+										amateur boxers to wear protective headgear, while
+										professional boxers are not. <br /><br />
+										Boxing contains many hands coordination, distancing,
+										footwork and dodging skills.
+									</p>
+									<a href="#bookings" class="btn btn-secondary">Book Now</a>
+								</div>
+								<div class="col-md img-row order-1">
+									<div class="col-6">
+										<img src="img/Styles/500px/Boxing2.png" alt="" />
+									</div>
+									<div class="col-6">
+										<img src="img/Styles/Boxing1.jpg" alt="" />
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="py-5 px-3 p-md-5 offset">
-			<div class="container">
-				<div class="row align-items-center justify-content-center g-4">
-					<div class="col-md text-center text-md-start">
-						<h2 class="army-text">MMA</h2>
-						<h3 class="army-text">MMA Mixed Martial Arts</h3>
-						<p class="lead">
-							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi
-							incidunt adipisci alias illo, tempore corrupti rerum quidem
-							repudiandae atque molestias?
-						</p>
-						<ul class="list-group">
-							<li class="list-group-item">An item</li>
-							<li class="list-group-item">A second item</li>
-							<li class="list-group-item">A third item</li>
-							<li class="list-group-item">A fourth item</li>
-							<li class="list-group-item">And a fifth one</li>
-						</ul>
-						<a href="" class="btn btn-secondary mt-4">
-							<i class="bi bi-chevron-right">Read More</i>
-						</a>
+		<section>
+			<div class="row g-5">
+				<div class="col-md-12">
+					<div class="card bg-camo text-dark border-radius-none py-5">
+						<div class="container">
+							<div
+								class="row pb-5 py-md-5 g-1 justify-content-center align-items-center bg-light"
+							>
+								<div class="col-md img-row">
+									<div class="col-6">
+										<img src="img/Styles/escrima1.webp" alt="" />
+									</div>
+									<div class="col-6">
+										<img src="img/Styles/escrima2.webp" alt="" />
+									</div>
+								</div>
+
+								<div class="col-md text-center p-2 p-2">
+									<h3 class="card-title">Escrima</h3>
+									<p class="card-text">
+										The national martial art of the Philippines, it is also
+										known by its two other Spanish derived names: Arnis and
+										Kali.
+										<br /><br />
+										Since there were many different Filipinos tribes, so too are
+										there many different styles, and they mainly utilise stick,
+										knife fighting and weapon disarming techniques, and some
+										open hand techniques.
+									</p>
+									<a href="#bookings" class="btn btn-secondary">Book Now</a>
+								</div>
+							</div>
+						</div>
 					</div>
-					<div class="col-md">
-						<img
-							src="img/mma-1.jpg"
-							alt=""
-							class="img-fluid img-box-shadow img-right"
-						/>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<div class="row g-5">
+				<div class="col-md-12">
+					<div class="card bg-lime text-dark border-radius-none py-5">
+						<div class="container">
+							<div
+								class="row pb-5 pb-md-1 g-1 justify-content-center align-items-center bg-lime"
+							>
+								<div class="col-md img-row">
+									<div class="col-6">
+										<img src="img/Styles/Krav-maga1.jpg" alt="" />
+									</div>
+									<div class="col-6">
+										<img src="img/Styles/Krav-maga2.jpg" alt="" />
+									</div>
+									<div class="col-6">
+										<img src="img/Styles/Krav-maga3.jpg" alt="" />
+									</div>
+									<div class="col-6">
+										<img src="img/Styles/Krav-maga4.jpg" alt="" />
+									</div>
+								</div>
+
+								<div class="col-md text-center p-2">
+									<h3 class="card-title mb-3">Krav Maga</h3>
+									<p class="card-text">
+										This is an Israeli martial art which combines aikido, judo,
+										karate, boxing, savate and wrestling together to create a
+										system used by the military and for civilians. <br /><br />
+										The movements are practical and effective as they emphasise
+										damaging attacks which can cause permanent injury in order
+										to end fights quickly. <br /><br />
+										Another very useful aspect is to become environmentally
+										aware of other potential attackers and to look for escape
+										routes.
+									</p>
+									<a href="#bookings" class="btn btn-secondary">Book Now</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<div class="row g-5">
+				<div class="col-md-12">
+					<div class="card bg-camo text-dark border-radius-none py-5">
+						<div class="container">
+							<div
+								class="row pb-5 py-md-5 g-1 justify-content-center align-items-center bg-light"
+							>
+								<div class="col-md img-row">
+									<div class="col-6">
+										<img src="img/Styles/escrima1.webp" alt="" />
+									</div>
+									<div class="col-6">
+										<img src="img/Styles/escrima2.webp" alt="" />
+									</div>
+								</div>
+
+								<div class="col-md text-center p-2">
+									<h3 class="card-title">Systema</h3>
+									<p class="card-text">
+										Systema is a Russian art which requires extensive drilling
+										in numerous movements and exercises, but these result in
+										practitioners becoming extremely flexible and agile.
+										<br /><br />
+										Combatants also utilise intensive breathing methods to
+										reduce tension and to sustain the body during hard workouts.
+										<br /><br />
+										Calisthenics are also practiced to make joints more supple
+										and this greatly helps to improve mobility.
+									</p>
+									<a href="#bookings" class="btn btn-secondary">Book Now</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<div class="row g-5">
+				<div class="col-md-12">
+					<div class="card bg-lime text-dark border-radius-none py-5">
+						<div class="container">
+							<div
+								class="row pb-5 pb-md-1 g-1 justify-content-center align-items-center bg-lime"
+							>
+								<div class="col-md img-row">
+									<div class="col-6">
+										<img src="img/Styles/Ninjitsu1.jpg" alt="" />
+									</div>
+									<div class="col-6">
+										<img src="img/Styles/Ninjitsu2.webp" alt="" />
+									</div>
+								</div>
+
+								<div class="col-md text-center p-2">
+									<h3 class="card-title mb-3">Ninjitsu</h3>
+									<p class="card-text">
+										Ninjutsu was developed in Japan and contrary to popular
+										belief, ninja did not often engage in open combat.
+										<br /><br />
+										They were employed as assassins, saboteurs, spies and
+										infiltrators so they had to use covert techniques so as not
+										to draw attention to themselves. <br /><br />
+										These had to be highly effective and they often used
+										concealed weapons as well.
+									</p>
+									<a href="#bookings" class="btn btn-secondary">Book Now</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<div class="row g-5">
+				<div class="col-md-12">
+					<div class="card bg-camo text-dark border-radius-none py-5">
+						<div class="container">
+							<div
+								class="row pb-5 pb-md-1 g-1 justify-content-center align-items-center bg-light"
+							>
+								<div class="col-md text-center p-2 order-2 order-md-1">
+									<h3 class="card-title mb-3">Kungfu</h3>
+									<p class="card-text">
+										Chinese Kung fu favours strikes and kicks over grappling and
+										wrestling and has many different styles that span from short
+										to long range, internal to external styles. <br /><br />
+										By picking many techniques from the various styles a
+										defender can have a wider array of tools and options in
+										their arsenal.
+									</p>
+									<a href="#bookings" class="btn btn-secondary">Book Now</a>
+								</div>
+								<div class="col-md img-row order-1">
+									<div class="col-6">
+										<img src="img/Styles/Kungfu1-transformed.jpeg" alt="" />
+									</div>
+									<div class="col-6">
+										<img src="img/Styles/Kungfu2-transformed.jpeg" alt="" />
+									</div>
+									<div class="col-6">
+										<img src="img/Styles/Kungfu3-transformed.jpeg" alt="" />
+									</div>
+									<div class="col-6">
+										<img src="img/Styles/Kungfu4-transformed.jpeg" alt="" />
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 		<!-- END Course Info -->
+
+		<!-- START Separator -->
+		<section class="bg-light text-light p-1 px-3">
+			<div class="container"></div>
+		</section>
+		<!-- END Separator -->
 
 		<!-- START Question Accordian -->
 		<section class="py-5 px-3 p-md-5 offset" id="questions">
@@ -321,13 +559,12 @@
 							data-bs-parent="#questions"
 						>
 							<div class="accordion-body">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
-								ipsa mollitia exercitationem maiores nihil repellat ratione
-								veritatis porro voluptatem saepe dolor ad, numquam ipsum ab
-								doloribus repudiandae quas tempora, voluptate amet eius
-								recusandae, placeat eveniet fuga eos. Esse corrupti maxime,
-								consectetur dignissimos perferendis ullam nam ducimus soluta
-								eaque maiores fugiat?
+								St Andrews Traditional Anglican <br />
+								Church 43 Burger St, <br />
+								Suideroord <br />
+								Johannesburg <br />
+								2091 <br />
+								South Africa
 							</div>
 						</div>
 					</div>
@@ -348,15 +585,7 @@
 							class="accordion-collapse collapse"
 							data-bs-parent="#questions"
 						>
-							<div class="accordion-body">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
-								ipsa mollitia exercitationem maiores nihil repellat ratione
-								veritatis porro voluptatem saepe dolor ad, numquam ipsum ab
-								doloribus repudiandae quas tempora, voluptate amet eius
-								recusandae, placeat eveniet fuga eos. Esse corrupti maxime,
-								consectetur dignissimos perferendis ullam nam ducimus soluta
-								eaque maiores fugiat?
-							</div>
+							<div class="accordion-body">Classes cost .....</div>
 						</div>
 					</div>
 					<!-- Item 3 -->
@@ -368,7 +597,7 @@
 								data-bs-toggle="collapse"
 								data-bs-target="#question-three"
 							>
-								What skills do i need to know?
+								What skills do I need to know?
 							</button>
 						</h2>
 						<div
@@ -377,13 +606,9 @@
 							data-bs-parent="#questions"
 						>
 							<div class="accordion-body">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
-								ipsa mollitia exercitationem maiores nihil repellat ratione
-								veritatis porro voluptatem saepe dolor ad, numquam ipsum ab
-								doloribus repudiandae quas tempora, voluptate amet eius
-								recusandae, placeat eveniet fuga eos. Esse corrupti maxime,
-								consectetur dignissimos perferendis ullam nam ducimus soluta
-								eaque maiores fugiat?
+								Whatever your skill level we have a course to accommodate you.
+								We have classes for beginners, intermediates and advanced
+								martial artists.
 							</div>
 						</div>
 					</div>
@@ -405,41 +630,7 @@
 							data-bs-parent="#questions"
 						>
 							<div class="accordion-body">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
-								ipsa mollitia exercitationem maiores nihil repellat ratione
-								veritatis porro voluptatem saepe dolor ad, numquam ipsum ab
-								doloribus repudiandae quas tempora, voluptate amet eius
-								recusandae, placeat eveniet fuga eos. Esse corrupti maxime,
-								consectetur dignissimos perferendis ullam nam ducimus soluta
-								eaque maiores fugiat?
-							</div>
-						</div>
-					</div>
-					<!-- Item 5 -->
-					<div class="accordion-item">
-						<h2 class="accordion-header" id="flush-headingOne">
-							<button
-								class="accordion-button collapsed"
-								type="button"
-								data-bs-toggle="collapse"
-								data-bs-target="#question-five"
-							>
-								What is the best course for me?
-							</button>
-						</h2>
-						<div
-							id="question-five"
-							class="accordion-collapse collapse"
-							data-bs-parent="#questions"
-						>
-							<div class="accordion-body">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
-								ipsa mollitia exercitationem maiores nihil repellat ratione
-								veritatis porro voluptatem saepe dolor ad, numquam ipsum ab
-								doloribus repudiandae quas tempora, voluptate amet eius
-								recusandae, placeat eveniet fuga eos. Esse corrupti maxime,
-								consectetur dignissimos perferendis ullam nam ducimus soluta
-								eaque maiores fugiat?
+								Contact us via Whatsapp to book your first class.
 							</div>
 						</div>
 					</div>
@@ -448,17 +639,22 @@
 		</section>
 		<!-- END Question Accordian -->
 
+		<!-- START Separator -->
+		<section class="bg-light text-light p-1 px-3">
+			<div class="container"></div>
+		</section>
+		<!-- END Separator -->
+
 		<!-- START Instructors -->
-		<section id="instructors" class="py-5 px-3 p-md-5 bg-light offset">
+		<section id="instructors" class="py-5 px-3 p-md- bg-light-border offset">
 			<div class="container">
-				<h2 class="text-center army-text-inverse">Our Instructors</h2>
-				<p class="lead text-center text-white mb-5">
-					Our instructors all have 5+ years experience as a web developer in the
-					industry.
+				<h2 class="text-center army-text">Our Instructors</h2>
+				<p class="lead text-center text-dark mb-5">
+					Our instructors all have 15+ years experience as a martial artists.
 				</p>
 
 				<div class="row g-4">
-					<div class="col-md-6 col-lg-3">
+					<div class="col-md-6 col-lg-6">
 						<div class="card bg-light">
 							<div class="card-body text-center">
 								<img
@@ -466,19 +662,23 @@
 									alt=""
 									class="rounded-circle mb-3"
 								/>
-								<h3 class="card-title mb-3">John Doe</h3>
-								<p class="card-text">
-									Lorem ipsum dolor sit amet consectetur adipisicing elit. In
-									sequi delectus eos doloribus libero sed.
-								</p>
-								<a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+								<h3 class="card-title mb-3">Warren Chong</h3>
+								<p class="card-text">About Warren.</p>
+								<!-- <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
 								<a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
 								<a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
-								<a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+								<a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a> -->
 							</div>
 						</div>
 					</div>
-					<div class="col-md-6 col-lg-3">
+					<div class="col-md-6 col-lg-6">
+						<div class="card bg-light">
+							<div class="card-body text-center">
+								<img src="img/Styles/Boxing2.jpg" class="w-100" />
+							</div>
+						</div>
+					</div>
+					<!-- <div class="col-md-6 col-lg-3">
 						<div class="card bg-light">
 							<div class="card-body text-center">
 								<img
@@ -537,53 +737,164 @@
 								<a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
 							</div>
 						</div>
-					</div>
+					</div> -->
 				</div>
 			</div>
 		</section>
 		<!-- END Instructors -->
 
-		<!-- START Contact & map -->
-		<section class="py-5 px-3 p-md-5" id="contact">
+		<!-- START Bookings -->
+		<section class="bg-light text-dark py-5 px-3 p-md-5 offset" id="bookings">
 			<div class="container">
+				<h2 class="text-center army-text py-3">Book a Class Now</h2>
+
+				<div class="bg-camo p-4 border border-radius">
+					<div
+						class="d-md-flex justify-content-between align-items-start bg-light p-5 border-radius"
+					>
+						<div>
+							<h4 class="Oswald-text text-uppercase p-2 mb-0 border-radius">
+								Mondays & Wednesdays
+							</h4>
+							<h5>
+								<ul>
+									<li><strong>Kids Class: 17:15 - 18:00</strong></li>
+									<li><strong>Adult Class: 18:15 - 19:15</strong></li>
+									<li><strong>Advanced Class: 19:15 - 20:15</strong></li>
+								</ul>
+							</h5>
+						</div>
+						<div>
+							<h4 class="Oswald-text text-uppercase p-2 mb-0 border-radius">
+								Saturdays
+							</h4>
+							<h5>
+								<ul>
+									<li><strong>Open Class: 08:30 - 09:30</strong></li>
+								</ul>
+							</h5>
+						</div>
+						<!--  WhatsApp btn-->
+						<div class="whatsapp-btn booking-btn">
+							<a
+								href="https://api.whatsapp.com/send?phone=27798898390"
+								target="_blank"
+								class="btn btn-success btn-lg"
+							>
+								<i class="bi bi-whatsapp h2 text-light"> Book Now!</i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END Bookings -->
+
+		<!-- START Separator -->
+		<section class="bg-light text-light p-1 px-3">
+			<div class="container"></div>
+		</section>
+		<!-- END Separator -->
+
+		<!-- START Contact & map -->
+		<section class="py-5 px-3 p-md-5 offset" id="contact">
+			<div class="container">
+				<h2 class="text-center army-text mb-5">Contact</h2>
 				<div class="row g-4">
-					<div class="col-md">
+					<div class="col-lg">
 						<h2 class="text-center mb-4">Contact Info</h2>
 						<ul class="list-group list-group-flush lead">
 							<li class="list-group-item">
-								<span class="fw-bold">Main Location</span> 50 main Street Cape
-								Town
+								<span class="fw-bold"
+									><bi class="bi-geo-alt text-danger h2 pe-3"></bi> St Andrews
+									Traditional Anglican Church</span
+								><br />
+								43 Burger St, Suideroord<br />
+								Johannesburg<br />
+								2091 <br />
+								South Africa
 							</li>
 							<li class="list-group-item">
-								<span class="fw-bold">Enrollment Phone</span> (555) 555-5555
+								<span class="fw-bold"
+									><bi class="bi-phone h2 text-info pe-3"></bi> Phone</span
+								>
+								+27 072 350 8751
 							</li>
 							<li class="list-group-item">
-								<span class="fw-bold">Student Phone</span> (333) 333-3333 MA
-							</li>
-							<li class="list-group-item">
-								<span class="fw-bold">Enrollment Email</span>
-								enroll@fronend.test
-							</li>
-							<li class="list-group-item">
-								<span class="fw-bold">Student Email</span> student@frontend.test
+								<span class="fw-bold"
+									><bi class="bi-whatsapp text-success h2 pe-3"></bi>
+									Whatsapp</span
+								>
+								+27 072 350 8751
 							</li>
 						</ul>
 					</div>
-					<div class="col-md">
-						<div id="map"></div>
+					<div class="col-lg">
+						<div id="map">
+							<div class="map-wrapper overlay">
+								<iframe
+									src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3577.848377123664!2d28.026631800507825!3d-26.266583931906663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950f4820ff8d1d%3A0x7353ec96034d5d3f!2sSt%20Andrews%20Traditional%20Anglican%20Church!5e0!3m2!1sen!2sza!4v1669141810565!5m2!1sen!2sza"
+									width="800"
+									height="600"
+									style="border: 0"
+									allowfullscreen=""
+									loading="lazy"
+									referrerpolicy="no-referrer-when-downgrade"
+								></iframe>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 		<!-- END Contact & map -->
 
-		<!-- START Footer -->
-		<footer class="p-5 bg-dark text-white text-center position-relative">
+		<!-- START WhatsApp Button -->
+		<section class="bg-light text-dark py-5 px-3 p-md-5">
 			<div class="container">
-				<img src="img/combat-fitness-logo-text-shadow-dark.png" alt="" />
+				<div class="bg-camo p-4 border border-radius">
+					<div
+						class="d-md-flex justify-content-between align-items-center bg-lime p-0 border-radius"
+					>
+						<h3
+							class="Oswald-text text-uppercase bg-lime p-2 mb-0 border-radius"
+						>
+							Want to learn more. Reach out to us on WhatsApp.
+						</h3>
+						<!--  WhatsApp btn-->
+						<div class="whatsapp-btn">
+							<a
+								href="https://api.whatsapp.com/send?phone=27798898390"
+								target="_blank"
+								class="btn btn-success btn-lg"
+							>
+								<i class="bi bi-whatsapp h2 text-light">
+									Chat Now on WhatsApp!</i
+								>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END WhatsApp Button -->
+
+		<!-- START Separator -->
+		<section class="bg-light text-light p-1 px-3">
+			<div class="container"></div>
+		</section>
+		<!-- END Separator -->
+
+		<!-- START Footer -->
+		<footer class="p-5 bg-dark text-light text-center position-relative">
+			<div class="container">
+				<img src="img/combat-fitness-logo-text-white-shadow.png" alt="" />
 				<p>Copyright &copy; 2022 Combat Fitness</p>
 				<p>Created by <a href="#">Wayne Hendricks</a></p>
-				<a href="#" class="position-absolute bottom-0 end-0 p-5">
+				<a
+					href="#"
+					class="scroll-up position-fixed bg-lime bottom-0 end-0 m-2 m-md-4 p-2 py-1"
+				>
 					<i class="bi bi-arrow-up-circle h1"></i>
 				</a>
 			</div>
@@ -594,16 +905,27 @@
 		<script src="bootstrap.bundle.min.js"></script>
 		<script src="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js"></script>
 
-		<!-- Mapbox JS -->
+		<!-- Sticky Nav JS -->
 		<script>
-			mapboxgl.accessToken =
-				"pk.eyJ1Ijoid2FubzgxIiwiYSI6ImNsOXJtZ29wZzBqeDgzdmw3cWpmcXQ4eWYifQ.HcEuwwaS3JwsYScP5mPbWQ";
-			var map = new mapboxgl.Map({
-				container: "map",
-				style: "mapbox://styles/mapbox/streets-v11",
-				center: [18.423311, -33.918861],
-				zoom: 18,
-			});
+			// Resize header iages on scroll
+			window.onscroll = function () {
+				scrollFunction();
+			};
+
+			function scrollFunction() {
+				if (
+					document.body.scrollTop > 50 ||
+					document.documentElement.scrollTop > 50
+				) {
+					document.querySelector(".navbar-brand img").style.width = "60px";
+					document.querySelector(".navbar-title img").style.width = "160px";
+					document.querySelector(".scroll-up").style.opacity = 1;
+				} else {
+					document.querySelector(".navbar-brand img").style.width = "90px";
+					document.querySelector(".navbar-title img").style.width = "180px";
+					document.querySelector(".scroll-up").style.opacity = 0;
+				}
+			}
 		</script>
 	</body>
 </html>
