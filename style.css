@@ -125,16 +125,25 @@ body::before {
 	width: 100%;
 } */
 
-.section-title,
-.army-text {
+.section-title {
 	/* font-family: "Oswald", sans-serif; */
 	/* font-family: "CallOfOpsDuty", sans-serif; */
 	/* font-family: "Stencil Cargo Army", sans-serif; */
+	font-family: "armalite", sans-serif;
+	text-shadow: 3px 2px 1px #dbcec3;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+.army-text {
 	font-family: "armalite", sans-serif;
 	color: #91a96e;
 	text-shadow: 3px 2px 1px #2c2829;
 	text-transform: uppercase;
 	letter-spacing: 3px;
+}
+
+.section-title {
+	text-shadow: 3px 2px 1px #dbcec3;
 }
 
 h2.army-text,
@@ -176,6 +185,12 @@ span.army-text {
 }
 .bg-lime-grey {
 	background: #9e9b7773;
+}
+.bg-lime-fade {
+	background-color: #9e9b7787 !important;
+}
+.bg-grey {
+	background-color: #6c615b87 !important;
 }
 .bg-light-border {
 	background-color: #f6f6f6;
