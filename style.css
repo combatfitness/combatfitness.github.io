@@ -313,6 +313,13 @@ section#questions .accordion-body {
 	color: #41543d;
 }
 
+coach-face {
+	width: 180px;
+	height: 177px;
+	object-fit: cover;
+	object-position: top;
+}
+
 #map {
 	width: 100%;
 	height: 100%;
